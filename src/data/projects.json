@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "User Portofolio",
+    "client": "Farell Rhezky Alvianto",
+    "description": "Static Portofolio, Simple, Elegant, Responsive",
+    "tech": ["React", "Tailwind"],
+    "link": "#",
+    "image": "/projectpict/Farell.png",
+    "icon": "💼",
+    "featured": true,
+    "color": "from-brand-primary/20 to-cyan-600/20",
+    "accentColor": "brand-primary"
+  },
+  {
+    "id": 2,
+    "title": "Personal Portfolio",
+    "client": "Farell Rhezky Alvianto",
+    "description": "A high-performance personal brand showcase for Farell Rhezky Alvianto.",
+    "tech": ["Astro", "Tailwind", "Vercel"],    
+    "link": "https://farell-rhezky-portofolio.vercel.app/",
+    "image": "/projectpict/Rezcode.png",
+    "icon": "🚀",
+    "featured": false,
+    "color": "from-teal-500/20 to-brand-primary/20",
+    "accentColor": "teal-400"
+  }
+]

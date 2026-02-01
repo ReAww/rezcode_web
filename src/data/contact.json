@@ -1,0 +1,32 @@
+{
+  "channels": [
+    {
+      "label": "WhatsApp Business",
+      "href": "https://wa.me/6282121001438",
+      "icon": "MessageCircle",
+      "color": "bg-[#25D366]",
+      "shadow": "shadow-[#25D366]/20"
+    },
+    {
+      "label": "rezcodeagency@gmail.com",
+      "href": "mailto:rezcodeagency@gmail.com",
+      "icon": "Mail",
+      "color": "bg-brand-light text-brand-dark",
+      "shadow": ""
+    }
+  ],
+  "sitemap": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Services", "href": "#services" },
+    { "label": "Showcase", "href": "#showcase" }
+  ],
+  "socials": [
+    {"icon": "Instagram", "href": "https://www.instagram.com/rezcodeagency/"},
+    {"icon": "Video", "href": "#"},
+    {"icon": "Youtube", "href": "#"},
+    {"icon": "Facebook", "href": "#"},
+    {"icon": "Linkedin", "href": "#"},
+    {"icon": "Github", "href": "#"}
+  ]
+}

@@ -1,70 +1,142 @@
 ---
-import { Layers, Zap, Binary, ArrowRight } from "lucide-react";
+import {
+  Layers,
+  Zap,
+  Binary,
+  Code,
+  Cpu,
+  Database,
+  Globe,
+  Sparkles,
+  ArrowRight,
+} from "lucide-react";
+import heroData from "../../data/hero.json";
+
+const IconMap: any = {
+  Layers,
+  Zap,
+  Binary,
+  Code,
+  Cpu,
+  Database,
+  Globe,
+  Sparkles,
+  ArrowRight,
+};
 ---
 
 <section
-  class="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden pt-20"
+  id="home"
+  class="h-screen flex items-center justify-center relative overflow-hidden bg-brand-dark"
 >
-  <!-- Background Elements -->
+  <!-- Single Logo Background - Center -->
   <div
-    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[800px] h-[800px] bg-brand-primary/10 blur-[120px] rounded-full animate-float"
-    data-aos="zoom-in"
-    data-aos-delay="200"
+    class="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none"
   >
+    <img
+      src="/logo.png"
+      alt="RezCode"
+      class="w-[600px] h-[600px] object-contain"
+    />
   </div>
 
-  <!-- Tech Grid Background -->
-  <div class="tech-grid"></div>
+  <!-- Animated Background Layer -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+    <!-- Gradient Orbs -->
+    <div
+      class="absolute top-1/4 -left-48 w-96 h-96 bg-brand-primary/30 rounded-full blur-3xl animate-float"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/4 -right-48 w-96 h-96 bg-brand-secondary/20 rounded-full blur-3xl animate-float-delayed"
+    >
+    </div>
 
-  <!-- Floating Elements -->
-  <div
-    class="absolute top-20 left-10 md:left-20 text-brand-secondary/20 animate-float"
-    style="animation-delay: 1s;"
-  >
-    <Layers className="w-16 h-16 md:w-24 md:h-24" />
-  </div>
-  <div
-    class="absolute bottom-40 right-10 md:right-20 text-brand-primary/20 animate-float"
-    style="animation-delay: 2s;"
-  >
-    <Zap className="w-12 h-12 md:w-20 md:h-20" />
-  </div>
-  <div
-    class="absolute top-40 right-20 md:right-40 text-white/5 animate-float"
-    style="animation-delay: 3s;"
-  >
-    <Binary className="w-14 h-14 md:w-24 md:h-24" />
+    <!-- Grid Pattern -->
+    <div
+      class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px]"
+    >
+    </div>
   </div>
 
-  <div
-    class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-brand-dark to-transparent -z-10"
-  >
+  <!-- Floating Tech Icons Layer -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    {
+      heroData.floatingIcons.map((item) => {
+        const Icon = IconMap[item.icon];
+        return (
+          <div
+            class={`absolute ${item.position} ${item.color} animate-float`}
+            style={`animation-delay: ${item.delay};`}
+          >
+            <Icon className={item.size} />
+          </div>
+        );
+      })
+    }
   </div>
 
-  <div class="text-center max-w-5xl z-10">
+  <!-- Content -->
+  <div
+    class="relative z-10 text-center px-4 md:px-6 max-w-6xl mx-auto pt-20 md:pt-0"
+  >
     <div
       data-aos="fade-down"
-      class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-primary/30 bg-brand-primary/10 text-brand-secondary text-xs font-bold uppercase tracking-widest mb-8 hover:bg-brand-primary/20 transition-colors cursor-default"
+      class="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-brand-primary/30 bg-brand-primary/10 text-brand-secondary text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6 md:mb-8"
     >
       <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
-      Next-Gen Software Agency
+      Premium Digital Solutions
     </div>
 
     <h1
-      data-aos="fade-up"
-      <h1
-      class="text-4xl md:text-7xl font-black mb-6 leading-tight text-white"
-      data-aos="fade-up"
+      class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black mb-6 md:mb-8 leading-tight overflow-hidden"
     >
-      Architecting the <span class="text-brand-primary">Digital Future</span>
+      <span
+        class="text-white inline-block animate-slide-reveal-up"
+        style="animation-delay: 0.2s;"
+      >
+        Welcome to
+      </span><br />
+      <span
+        class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-cyan-400 to-brand-secondary animate-gradient inline-block animate-reveal-text"
+        style="animation-delay: 0.6s;"
+      >
+        RezCode
+      </span>
     </h1>
+
     <p
-      class="text-lg md:text-xl text-brand-secondary mb-8 max-w-2xl mx-auto"
-      data-aos="fade-up"
-      data-aos-delay="100"
+      class="text-base md:text-lg lg:text-xl text-brand-light/80 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-4 opacity-0 animate-slide-reveal-up"
+      style="animation-delay: 1s;"
     >
       We engineer web solutions that are fast, secure, and infinitely scalable.
       Beyond code, we build digital experiences that define your brand's future.
     </p>
+
+    <div
+      class="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-slide-reveal-up"
+      style="animation-delay: 1.4s;"
+    >
+      {
+        heroData.buttons.map((btn) => {
+          const Icon = btn.icon ? IconMap[btn.icon] : null;
+          return (
+            <a
+              href={btn.href}
+              class={`group px-8 py-4 rounded-full font-bold transition-all duration-300 flex items-center gap-2 hover:gap-3 hover:scale-105 ${
+                btn.primary
+                  ? "bg-brand-primary text-white hover:bg-brand-primary/90 animate-glow-pulse"
+                  : "border-2 border-brand-primary/50 text-brand-primary hover:bg-brand-primary/10"
+              }`}
+            >
+              {btn.label}
+              {Icon && (
+                <Icon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              )}
+            </a>
+          );
+        })
+      }
+    </div>
   </div>
 </section>

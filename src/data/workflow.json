@@ -1,0 +1,30 @@
+[
+  {
+    "step": "1",
+    "title": "Analyze",
+    "description": "Dissecting the problem space to find the optimal trajectory.",
+    "icon": "Search",
+    "delay": 0
+  },
+  {
+    "step": "2",
+    "title": "Architect",
+    "description": "Designing robust systems combining aesthetics and scalability.",
+    "icon": "PenTool",
+    "delay": 100
+  },
+  {
+    "step": "3",
+    "title": "Develop",
+    "description": "Writing clean, efficient, and maintainable code.",
+    "icon": "Code2",
+    "delay": 200
+  },
+  {
+    "step": "4",
+    "title": "Launch",
+    "description": "Deploying to global edge networks for instant availability.",
+    "icon": "Rocket",
+    "delay": 300
+  }
+]

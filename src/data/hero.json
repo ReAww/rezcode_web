@@ -1,0 +1,27 @@
+{
+  "buttons": [
+    {
+      "label": "View Our Work",
+      "href": "#showcase",
+      "primary": true,
+      "icon": "ArrowRight"
+    },
+    {
+      "label": "Meet The Team",
+      "href": "#team",
+      "primary": false
+    }
+  ],
+  "floatingIcons": [
+    { "icon": "Layers", "delay": "0.2s", "position": "top-20 left-10 md:left-20", "color": "text-brand-primary/20", "size": "w-16 h-16 md:w-20 md:h-20" },
+    { "icon": "Code", "delay": "1.2s", "position": "top-32 right-16 md:right-32", "color": "text-brand-secondary/20", "size": "w-14 h-14 md:w-18 md:h-18" },
+    { "icon": "Database", "delay": "2.5s", "position": "top-1/2 left-8 md:left-16", "color": "text-cyan-400/15", "size": "w-12 h-12 md:w-16 md:h-16" },
+    { "icon": "Cpu", "delay": "3.8s", "position": "top-1/2 right-12 md:right-24", "color": "text-purple-400/15", "size": "w-16 h-16 md:w-20 md:h-20" },
+    { "icon": "Globe", "delay": "1.8s", "position": "bottom-32 left-16 md:left-32", "color": "text-brand-secondary/20", "size": "w-14 h-14 md:w-18 md:h-18" },
+    { "icon": "Zap", "delay": "2.8s", "position": "bottom-24 right-10 md:right-20", "color": "text-brand-primary/20", "size": "w-12 h-12 md:w-16 md:h-16" },
+    { "icon": "Binary", "delay": "0.8s", "position": "top-24 left-1/2 -translate-x-1/2", "color": "text-white/10", "size": "w-14 h-14 md:w-18 md:h-18" },
+    { "icon": "Sparkles", "delay": "4.2s", "position": "bottom-40 left-1/3", "color": "text-cyan-300/15", "size": "w-10 h-10 md:w-14 md:h-14" },
+    { "icon": "Code", "delay": "2.4s", "position": "top-1/3 left-24 md:left-40", "color": "text-purple-300/15", "size": "w-10 h-10 md:w-12 md:h-12" },
+    { "icon": "Layers", "delay": "3.4s", "position": "bottom-1/3 right-20 md:right-36", "color": "text-cyan-400/15", "size": "w-12 h-12 md:w-14 md:h-14" }
+  ]
+}

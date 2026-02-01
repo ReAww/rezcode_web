@@ -1,0 +1,26 @@
+[
+  {
+    "title": "High-Performance Web Apps",
+    "description": "Modern web applications built with React & Astro. Lightning-fast, SEO-optimized, and infinitely scalable.",
+    "icon": "Monitor",
+    "color": "brand-primary",
+    "features": ["SaaS Platforms", "E-Commerce Systems", "Web Application"],
+    "delay": 0
+  },
+  {
+    "title": "Futuristic UI/UX Design",
+    "description": "Interfaces that blend cutting-edge aesthetics with intuitive user experiences. Your brand, reimagined.",
+    "icon": "Smartphone",
+    "color": "brand-secondary",
+    "features": ["Motion Design", "Design Systems", "Brand Identity"],
+    "delay": 100
+  },
+  {
+    "title": "Progressive Web Apps",
+    "description": "Installable web apps that work offline. Native app feel, without the app store hassle.",
+    "icon": "Cpu",
+    "color": "purple-400",
+    "features": ["Offline-First Architecture", "Push Notifications", "Cross-Platform"],
+    "delay": 200
+  }
+]

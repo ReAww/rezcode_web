@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Farell Rhezky Alvianto",
+    "role": "Founder & Lead Architect",
+    "bio": "Full-stack engineer specializing in high-performance systems and scalable web architecture.",
+    "image": "/teampict/Farell.jpeg",
+    "initials": "FA",
+    "linkedin": "#",
+    "github": "#",
+    "color": "from-[#507abd]/20 to-[#6e9fd5]/20"
+  },
+  {
+    "name": "Rayza Tri Agatha",
+    "role": "Creative Director",
+    "bio": "UI/UX Engineer expert in crafting futuristic visuals and immersive digital experiences.",
+    "image": "", 
+    "initials": "RA",
+    "linkedin": "#",
+    "instagram": "#",
+    "color": "from-[#6e9fd5]/20 to-purple-500/20"
+  }
+]

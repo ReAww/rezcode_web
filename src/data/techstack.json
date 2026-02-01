@@ -1,0 +1,101 @@
+[
+  {
+    "category": "Core",
+    "description": "The foundation of every project we build.",
+    "icon": "Layout",
+    "color": "text-cyan-400",
+    "bgColor": "bg-cyan-500/20",
+    "items": [
+      {
+        "name": "Astro",
+        "description": "Ultra-Fast Static Sites",
+        "icon": "Rocket",
+        "color": "text-orange-400",
+        "bgColor": "bg-orange-400/10"
+      },
+      {
+        "name": "React 19",
+        "description": "Modern UI Framework",
+        "icon": "Atom",
+        "color": "text-cyan-400",
+        "bgColor": "bg-cyan-400/10"
+      },
+      {
+        "name": "TypeScript",
+        "description": "Type-Safe Development",
+        "icon": "Braces",
+        "color": "text-blue-400",
+        "bgColor": "bg-blue-400/10"
+      }
+    ]
+  },
+  {
+    "category": "Style",
+    "description": "Design systems that bring interfaces to life.",
+    "icon": "PenTool",
+    "color": "text-teal-400",
+    "bgColor": "bg-teal-500/20",
+    "items": [
+      {
+        "name": "Tailwind CSS v4",
+        "description": "Utility-First Design",
+        "icon": "Wind",
+        "color": "text-teal-400",
+        "bgColor": "bg-teal-400/10"
+      },
+      {
+        "name": "Framer Motion",
+        "description": "Fluid Animations",
+        "icon": "Cpu",
+        "color": "text-purple-400",
+        "bgColor": "bg-purple-400/10"
+      }
+    ]
+  },
+  {
+    "category": "Tools",
+    "description": "Professional workflow and deployment.",
+    "icon": "GitBranch",
+    "color": "text-purple-400",
+    "bgColor": "bg-purple-500/20",
+    "items": [
+      {
+        "name": "GitHub",
+        "description": "Version Control",
+        "icon": "GitBranch",
+        "color": "text-red-400",
+        "bgColor": "bg-red-400/10"
+      },
+      {
+        "name": "Vercel",
+        "description": "Edge Deployment",
+        "icon": "Globe",
+        "color": "text-brand-primary",
+        "bgColor": "bg-white/10"
+      }
+    ]
+  },
+  {
+    "category": "Database",
+    "description": "Scalable data storage solutions.",
+    "icon": "Database",
+    "color": "text-green-400",
+    "bgColor": "bg-green-500/20",
+    "items": [
+      {
+        "name": "MongoDB",
+        "description": "NoSQL Database",
+        "icon": "Database",
+        "color": "text-green-400",
+        "bgColor": "bg-green-400/10"
+      },
+      {
+        "name": "PostgreSQL",
+        "description": "Relational Database",
+        "icon": "Server",
+        "color": "text-blue-400",
+        "bgColor": "bg-blue-400/10"
+      }
+    ]
+  }
+]

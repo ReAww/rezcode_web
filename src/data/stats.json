@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Clients",
+    "value": "1",
+    "icon": "Users",
+    "color": "cyan",
+    "delay": 0
+  },
+  {
+    "label": "Projects Done",
+    "value": "1",
+    "icon": "TrendingUp",
+    "color": "brand-primary",
+    "delay": 100
+  }
+]

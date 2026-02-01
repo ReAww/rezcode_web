@@ -1,0 +1,145 @@
+---
+import teamData from "../../data/team.json";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
+---
+
+<section id="team" class="py-24 bg-[#0c0f19] relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2
+        class="text-brand-secondary font-bold tracking-[0.3em] uppercase text-xs mb-4"
+      >
+        The Collective
+      </h2>
+      <div class="overflow-hidden">
+        <h3
+          class="text-4xl md:text-6xl font-black text-white tracking-tighter animate-reveal-text"
+        >
+          Meet The Architects
+        </h3>
+      </div>
+      <p
+        class="text-brand-light/60 mt-4 max-w-2xl mx-auto text-lg leading-relaxed"
+      >
+        A diverse convergence of elite talent, dedicated to engineering the
+        digital frontier.
+      </p>
+    </div>
+
+    <div class="relative px-0 md:px-4">
+      <button
+        id="team-prev"
+        class="hidden xl:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-20 w-14 h-14 items-center justify-center rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 hover:bg-brand-primary hover:border-brand-primary hover:scale-110 transition-all duration-500 text-white group shadow-2xl shadow-black/50"
+      >
+        <ChevronLeft className="w-7 h-7 group-hover:animate-pulse" />
+      </button>
+
+      <button
+        id="team-next"
+        class="hidden xl:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-20 w-14 h-14 items-center justify-center rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 hover:bg-brand-primary hover:border-brand-primary hover:scale-110 transition-all duration-500 text-white group shadow-2xl shadow-black/50"
+      >
+        <ChevronRight className="w-7 h-7 group-hover:animate-pulse" />
+      </button>
+
+      <div
+        id="team-slider"
+        class="flex gap-6 md:gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-12 scroll-smooth px-4 -mx-4 md:px-0 md:mx-0"
+      >
+        {
+          teamData.map((member, index) => (
+            <div
+              class="w-[300px] md:w-[400px] flex-shrink-0 snap-center group relative rounded-[2.5rem] bg-white/[0.03] backdrop-blur-3xl border border-white/10 hover:border-brand-primary/50 transition-all duration-700 overflow-hidden glow-card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div
+                class={`relative h-32 bg-gradient-to-br ${member.color} overflow-hidden`}
+              >
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(255,255,255,0.1),transparent)]" />
+              </div>
+
+              <div class="relative -mt-16 px-6 text-center pb-8">
+                <div class="w-24 h-24 mx-auto rounded-3xl overflow-hidden border-4 border-brand-dark bg-[#1a1f2e] shadow-2xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 relative">
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+                  ) : (
+                    <div class="w-full h-full flex items-center justify-center text-2xl font-black text-brand-primary">
+                      {member.initials}
+                    </div>
+                  )}
+                  <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
+
+                <span class="text-[10px] text-brand-primary font-black uppercase tracking-widest px-3 py-1 bg-brand-primary/10 rounded-full inline-block mb-3">
+                  {member.role}
+                </span>
+                <h4 class="text-xl font-black text-white mb-2 tracking-tight group-hover:text-brand-primary transition-colors">
+                  {member.name}
+                </h4>
+                <p class="text-white/50 text-sm leading-relaxed mb-6 h-12 line-clamp-2 px-2">
+                  {member.bio}
+                </p>
+
+                <div class="flex gap-2">
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      class="flex-1 py-2.5 bg-white/5 rounded-xl border border-white/5 hover:bg-brand-primary/20 hover:-translate-y-1 transition-all group/link"
+                    >
+                      <Linkedin className="w-4 h-4 mx-auto opacity-50 group-hover/link:opacity-100 group-hover/link:text-brand-primary" />
+                    </a>
+                  )}
+                  {member.github && (
+                    <a
+                      href={member.github}
+                      class="flex-1 py-2.5 bg-white/5 rounded-xl border border-white/5 hover:bg-brand-primary/20 hover:-translate-y-1 transition-all group/link"
+                    >
+                      <Github className="w-4 h-4 mx-auto opacity-50 group-hover/link:opacity-100 group-hover/link:text-brand-primary" />
+                    </a>
+                  )}
+                  {member.instagram && (
+                    <a
+                      href={member.instagram}
+                      class="flex-1 py-2.5 bg-white/5 rounded-xl border border-white/5 hover:bg-brand-primary/20 hover:-translate-y-1 transition-all group/link"
+                    >
+                      <Instagram className="w-4 h-4 mx-auto opacity-50 group-hover/link:opacity-100 group-hover/link:text-brand-primary" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const setupSlider = (sliderId: string, prevId: string, nextId: string) => {
+    const slider = document.getElementById(sliderId);
+    const prev = document.getElementById(prevId);
+    const next = document.getElementById(nextId);
+
+    if (slider && prev && next) {
+      prev.onclick = () => {
+        slider.scrollBy({ left: -400, behavior: "smooth" });
+      };
+      next.onclick = () => {
+        slider.scrollBy({ left: 400, behavior: "smooth" });
+      };
+    }
+  };
+
+  setupSlider("team-slider", "team-prev", "team-next");
+</script>

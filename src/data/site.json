@@ -1,0 +1,15 @@
+{
+  "name": "RezCode",
+  "logo": "/logo.png",
+  "navigation": [
+    { "name": "Home", "href": "#home", "icon": "Home" },
+    { "name": "About", "href": "#about", "icon": "User" },
+    { "name": "Services", "href": "#services", "icon": "Zap" },
+    { "name": "Showcase", "href": "#showcase", "icon": "Layers" }
+  ],
+  "contactButton": {
+    "label": "Contact",
+    "href": "#contact",
+    "icon": "MessageCircle"
+  }
+}
